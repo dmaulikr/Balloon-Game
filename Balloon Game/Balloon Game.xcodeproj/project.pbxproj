@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3438D2161AF01FF60002C487 /* StepsList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3438D2151AF01FF60002C487 /* StepsList.plist */; };
+		34BE3E521ACDD02D00CF4481 /* LightningCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BE3E511ACDD02D00CF4481 /* LightningCloud.swift */; };
+		EB01A7FC1AD4AA5600C5B3A7 /* SavedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB01A7FB1AD4AA5600C5B3A7 /* SavedData.swift */; };
+		EB0372021AE057C7006AFA4E /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF852571A8FE4F000F05D73 /* GameScene.swift */; };
+		EB17176B1AE9C05A00E4B250 /* HasSavedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB17176A1AE9C05A00E4B250 /* HasSavedData.swift */; };
+		EB1D86CE1AE182A0004D3B15 /* MailboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1D86CD1AE182A0004D3B15 /* MailboxViewController.swift */; };
+		EB1D86D01AE182D9004D3B15 /* ChooseCountryScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1D86CF1AE182D9004D3B15 /* ChooseCountryScene.swift */; };
+		EB28B4791AEACDBF00DF0106 /* ChooseCountryScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB28B4781AEACDBF00DF0106 /* ChooseCountryScreenVC.swift */; };
+		EB30B4FD1AF0504300110AAD /* LetterContents.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB30B4FC1AF0504300110AAD /* LetterContents.swift */; };
+		EB3B42EB1AF5C54700F67897 /* GoingToAPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3B42EA1AF5C54700F67897 /* GoingToAPlace.swift */; };
+		EB6B10BC1AE827B300CCF5C0 /* LetterHints.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB6B10BB1AE827B300CCF5C0 /* LetterHints.plist */; };
+		EB6B10C01AE829E000CCF5C0 /* AdjacencyList.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB6B10BF1AE829E000CCF5C0 /* AdjacencyList.plist */; };
+		EB6B10C21AE82E5D00CCF5C0 /* UILetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6B10C11AE82E5D00CCF5C0 /* UILetterView.swift */; };
+		EB6B10C41AE8361C00CCF5C0 /* SingleLetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6B10C31AE8361C00CCF5C0 /* SingleLetterView.swift */; };
+		EB6EC6311ACDDF0A004E1FFF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB6EC6301ACDDF0A004E1FFF /* Default-568h@2x.png */; };
+		EB8515441ACCB964007CE2D4 /* ColliderIDs.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB36DD551ACB2A9F0031A2EC /* ColliderIDs.swift */; };
+		EB86FA991ADB281A008B8B51 /* ChooseCountrySceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB86FA981ADB281A008B8B51 /* ChooseCountrySceneViewController.swift */; };
+		EB86FA9B1ADB2CC0008B8B51 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB86FA9A1ADB2CC0008B8B51 /* MainMenuViewController.swift */; };
+		EB9A59521AF68D1B003CDBC9 /* EndOfGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9A59511AF68D1B003CDBC9 /* EndOfGame.swift */; };
+		EBB1BCB91AC850B00028F83C /* Balloon.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB1BCB81AC850B00028F83C /* Balloon.swift */; };
+		EBB1BCBB1AC854A50028F83C /* Obstacle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB1BCBA1AC854A50028F83C /* Obstacle.swift */; };
+		EBB1BCBD1AC856210028F83C /* LetterObstacle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB1BCBC1AC856210028F83C /* LetterObstacle.swift */; };
+		EBB1BCBF1AC8562D0028F83C /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB1BCBE1AC8562D0028F83C /* Tree.swift */; };
+		EBB1BCC11AC8563B0028F83C /* Lightning.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB1BCC01AC8563B0028F83C /* Lightning.swift */; };
+		EBB1BCC31AC8565D0028F83C /* Bird.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB1BCC21AC8565D0028F83C /* Bird.swift */; };
+		EBF852541A8FE4F000F05D73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF852531A8FE4F000F05D73 /* AppDelegate.swift */; };
+		EBF852561A8FE4F000F05D73 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = EBF852551A8FE4F000F05D73 /* GameScene.sks */; };
+		EBF8525A1A8FE4F000F05D73 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF852591A8FE4F000F05D73 /* GameViewController.swift */; };
+		EBF8525D1A8FE4F000F05D73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBF8525B1A8FE4F000F05D73 /* Main.storyboard */; };
+		EBF8525F1A8FE4F000F05D73 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBF8525E1A8FE4F000F05D73 /* Images.xcassets */; };
+		EBF852621A8FE4F100F05D73 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBF852601A8FE4F100F05D73 /* LaunchScreen.xib */; };
+		EBF8526E1A8FE4F100F05D73 /* Balloon_GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF8526D1A8FE4F100F05D73 /* Balloon_GameTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EBF852681A8FE4F100F05D73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBF852461A8FE4F000F05D73 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBF8524D1A8FE4F000F05D73;
+			remoteInfo = "Balloon Game";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3438D2151AF01FF60002C487 /* StepsList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = StepsList.plist; sourceTree = "<group>"; };
+		34BE3E511ACDD02D00CF4481 /* LightningCloud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightningCloud.swift; sourceTree = "<group>"; };
+		EB01A7FB1AD4AA5600C5B3A7 /* SavedData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedData.swift; sourceTree = "<group>"; };
+		EB17176A1AE9C05A00E4B250 /* HasSavedData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HasSavedData.swift; sourceTree = "<group>"; };
+		EB1D86CD1AE182A0004D3B15 /* MailboxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailboxViewController.swift; sourceTree = "<group>"; };
+		EB1D86CF1AE182D9004D3B15 /* ChooseCountryScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseCountryScene.swift; sourceTree = "<group>"; };
+		EB28B4781AEACDBF00DF0106 /* ChooseCountryScreenVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseCountryScreenVC.swift; sourceTree = "<group>"; };
+		EB30B4FC1AF0504300110AAD /* LetterContents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LetterContents.swift; sourceTree = "<group>"; };
+		EB36DD551ACB2A9F0031A2EC /* ColliderIDs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColliderIDs.swift; sourceTree = "<group>"; };
+		EB3B42EA1AF5C54700F67897 /* GoingToAPlace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoingToAPlace.swift; sourceTree = "<group>"; };
+		EB6B10BB1AE827B300CCF5C0 /* LetterHints.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LetterHints.plist; sourceTree = "<group>"; };
+		EB6B10BF1AE829E000CCF5C0 /* AdjacencyList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AdjacencyList.plist; path = ../AdjacencyList.plist; sourceTree = "<group>"; };
+		EB6B10C11AE82E5D00CCF5C0 /* UILetterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILetterView.swift; sourceTree = "<group>"; };
+		EB6B10C31AE8361C00CCF5C0 /* SingleLetterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleLetterView.swift; sourceTree = "<group>"; };
+		EB6EC6301ACDDF0A004E1FFF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		EB86FA981ADB281A008B8B51 /* ChooseCountrySceneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseCountrySceneViewController.swift; sourceTree = "<group>"; };
+		EB86FA9A1ADB2CC0008B8B51 /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
+		EB9A59511AF68D1B003CDBC9 /* EndOfGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndOfGame.swift; sourceTree = "<group>"; };
+		EBB1BCB81AC850B00028F83C /* Balloon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Balloon.swift; sourceTree = "<group>"; };
+		EBB1BCBA1AC854A50028F83C /* Obstacle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Obstacle.swift; sourceTree = "<group>"; };
+		EBB1BCBC1AC856210028F83C /* LetterObstacle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LetterObstacle.swift; sourceTree = "<group>"; };
+		EBB1BCBE1AC8562D0028F83C /* Tree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
+		EBB1BCC01AC8563B0028F83C /* Lightning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lightning.swift; sourceTree = "<group>"; };
+		EBB1BCC21AC8565D0028F83C /* Bird.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bird.swift; sourceTree = "<group>"; };
+		EBF8524E1A8FE4F000F05D73 /* Balloon Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Balloon Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBF852531A8FE4F000F05D73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EBF852551A8FE4F000F05D73 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		EBF852571A8FE4F000F05D73 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		EBF852591A8FE4F000F05D73 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		EBF8525C1A8FE4F000F05D73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EBF8525E1A8FE4F000F05D73 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EBF852611A8FE4F100F05D73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		EBF852671A8FE4F100F05D73 /* Balloon GameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Balloon GameTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBF8526C1A8FE4F100F05D73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBF8526D1A8FE4F100F05D73 /* Balloon_GameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Balloon_GameTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EBF8524B1A8FE4F000F05D73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBF852641A8FE4F100F05D73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EBF852451A8FE4F000F05D73 = {
+			isa = PBXGroup;
+			children = (
+				EB6EC6301ACDDF0A004E1FFF /* Default-568h@2x.png */,
+				EBF852501A8FE4F000F05D73 /* Balloon Game */,
+				EBF8524F1A8FE4F000F05D73 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EBF8524F1A8FE4F000F05D73 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBF8524E1A8FE4F000F05D73 /* Balloon Game.app */,
+				EBF852671A8FE4F100F05D73 /* Balloon GameTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBF852501A8FE4F000F05D73 /* Balloon Game */ = {
+			isa = PBXGroup;
+			children = (
+				EBF852531A8FE4F000F05D73 /* AppDelegate.swift */,
+				EBF852551A8FE4F000F05D73 /* GameScene.sks */,
+				EBF852571A8FE4F000F05D73 /* GameScene.swift */,
+				EB1D86CF1AE182D9004D3B15 /* ChooseCountryScene.swift */,
+				EBF852591A8FE4F000F05D73 /* GameViewController.swift */,
+				EB3B42EA1AF5C54700F67897 /* GoingToAPlace.swift */,
+				EB1D86CD1AE182A0004D3B15 /* MailboxViewController.swift */,
+				EB6B10C11AE82E5D00CCF5C0 /* UILetterView.swift */,
+				EB6B10C31AE8361C00CCF5C0 /* SingleLetterView.swift */,
+				EB9A59511AF68D1B003CDBC9 /* EndOfGame.swift */,
+				EB86FA9A1ADB2CC0008B8B51 /* MainMenuViewController.swift */,
+				EBF8525B1A8FE4F000F05D73 /* Main.storyboard */,
+				EBF8525E1A8FE4F000F05D73 /* Images.xcassets */,
+				EBF852601A8FE4F100F05D73 /* LaunchScreen.xib */,
+				EBF852511A8FE4F000F05D73 /* Supporting Files */,
+				EBB1BCB81AC850B00028F83C /* Balloon.swift */,
+				EBB1BCBA1AC854A50028F83C /* Obstacle.swift */,
+				EBB1BCBC1AC856210028F83C /* LetterObstacle.swift */,
+				EBB1BCBE1AC8562D0028F83C /* Tree.swift */,
+				34BE3E511ACDD02D00CF4481 /* LightningCloud.swift */,
+				EBB1BCC01AC8563B0028F83C /* Lightning.swift */,
+				EBB1BCC21AC8565D0028F83C /* Bird.swift */,
+				EB36DD551ACB2A9F0031A2EC /* ColliderIDs.swift */,
+				EB17176A1AE9C05A00E4B250 /* HasSavedData.swift */,
+				EB30B4FC1AF0504300110AAD /* LetterContents.swift */,
+				EB01A7FB1AD4AA5600C5B3A7 /* SavedData.swift */,
+				EB6B10BB1AE827B300CCF5C0 /* LetterHints.plist */,
+				EB6B10BF1AE829E000CCF5C0 /* AdjacencyList.plist */,
+				3438D2151AF01FF60002C487 /* StepsList.plist */,
+				EB28B4781AEACDBF00DF0106 /* ChooseCountryScreenVC.swift */,
+				EB86FA981ADB281A008B8B51 /* ChooseCountrySceneViewController.swift */,
+				EBF8526A1A8FE4F100F05D73 /* Balloon GameTests */,
+			);
+			path = "Balloon Game";
+			sourceTree = "<group>";
+		};
+		EBF852511A8FE4F000F05D73 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EBF8526A1A8FE4F100F05D73 /* Balloon GameTests */ = {
+			isa = PBXGroup;
+			children = (
+				EBF8526D1A8FE4F100F05D73 /* Balloon_GameTests.swift */,
+				EBF8526B1A8FE4F100F05D73 /* Supporting Files */,
+			);
+			path = "Balloon GameTests";
+			sourceTree = SOURCE_ROOT;
+		};
+		EBF8526B1A8FE4F100F05D73 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EBF8526C1A8FE4F100F05D73 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EBF8524D1A8FE4F000F05D73 /* Balloon Game */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBF852711A8FE4F100F05D73 /* Build configuration list for PBXNativeTarget "Balloon Game" */;
+			buildPhases = (
+				EBF8524A1A8FE4F000F05D73 /* Sources */,
+				EBF8524B1A8FE4F000F05D73 /* Frameworks */,
+				EBF8524C1A8FE4F000F05D73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Balloon Game";
+			productName = "Balloon Game";
+			productReference = EBF8524E1A8FE4F000F05D73 /* Balloon Game.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EBF852661A8FE4F100F05D73 /* Balloon GameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBF852741A8FE4F100F05D73 /* Build configuration list for PBXNativeTarget "Balloon GameTests" */;
+			buildPhases = (
+				EBF852631A8FE4F100F05D73 /* Sources */,
+				EBF852641A8FE4F100F05D73 /* Frameworks */,
+				EBF852651A8FE4F100F05D73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBF852691A8FE4F100F05D73 /* PBXTargetDependency */,
+			);
+			name = "Balloon GameTests";
+			productName = "Balloon GameTests";
+			productReference = EBF852671A8FE4F100F05D73 /* Balloon GameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EBF852461A8FE4F000F05D73 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = blondiebytes;
+				TargetAttributes = {
+					EBF8524D1A8FE4F000F05D73 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					EBF852661A8FE4F100F05D73 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = EBF8524D1A8FE4F000F05D73;
+					};
+				};
+			};
+			buildConfigurationList = EBF852491A8FE4F000F05D73 /* Build configuration list for PBXProject "Balloon Game" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EBF852451A8FE4F000F05D73;
+			productRefGroup = EBF8524F1A8FE4F000F05D73 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EBF8524D1A8FE4F000F05D73 /* Balloon Game */,
+				EBF852661A8FE4F100F05D73 /* Balloon GameTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EBF8524C1A8FE4F000F05D73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBF852621A8FE4F100F05D73 /* LaunchScreen.xib in Resources */,
+				EBF8525F1A8FE4F000F05D73 /* Images.xcassets in Resources */,
+				EB6B10C01AE829E000CCF5C0 /* AdjacencyList.plist in Resources */,
+				EBF852561A8FE4F000F05D73 /* GameScene.sks in Resources */,
+				3438D2161AF01FF60002C487 /* StepsList.plist in Resources */,
+				EB6B10BC1AE827B300CCF5C0 /* LetterHints.plist in Resources */,
+				EB6EC6311ACDDF0A004E1FFF /* Default-568h@2x.png in Resources */,
+				EBF8525D1A8FE4F000F05D73 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBF852651A8FE4F100F05D73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EBF8524A1A8FE4F000F05D73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB0372021AE057C7006AFA4E /* GameScene.swift in Sources */,
+				EB1D86CE1AE182A0004D3B15 /* MailboxViewController.swift in Sources */,
+				EB8515441ACCB964007CE2D4 /* ColliderIDs.swift in Sources */,
+				EB30B4FD1AF0504300110AAD /* LetterContents.swift in Sources */,
+				EBB1BCBF1AC8562D0028F83C /* Tree.swift in Sources */,
+				EBF8525A1A8FE4F000F05D73 /* GameViewController.swift in Sources */,
+				EBB1BCBB1AC854A50028F83C /* Obstacle.swift in Sources */,
+				EB1D86D01AE182D9004D3B15 /* ChooseCountryScene.swift in Sources */,
+				EB6B10C21AE82E5D00CCF5C0 /* UILetterView.swift in Sources */,
+				EB3B42EB1AF5C54700F67897 /* GoingToAPlace.swift in Sources */,
+				EB86FA991ADB281A008B8B51 /* ChooseCountrySceneViewController.swift in Sources */,
+				EB17176B1AE9C05A00E4B250 /* HasSavedData.swift in Sources */,
+				EB6B10C41AE8361C00CCF5C0 /* SingleLetterView.swift in Sources */,
+				EB86FA9B1ADB2CC0008B8B51 /* MainMenuViewController.swift in Sources */,
+				EBB1BCC11AC8563B0028F83C /* Lightning.swift in Sources */,
+				EBB1BCBD1AC856210028F83C /* LetterObstacle.swift in Sources */,
+				EB01A7FC1AD4AA5600C5B3A7 /* SavedData.swift in Sources */,
+				34BE3E521ACDD02D00CF4481 /* LightningCloud.swift in Sources */,
+				EBF852541A8FE4F000F05D73 /* AppDelegate.swift in Sources */,
+				EBB1BCC31AC8565D0028F83C /* Bird.swift in Sources */,
+				EB9A59521AF68D1B003CDBC9 /* EndOfGame.swift in Sources */,
+				EBB1BCB91AC850B00028F83C /* Balloon.swift in Sources */,
+				EB28B4791AEACDBF00DF0106 /* ChooseCountryScreenVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBF852631A8FE4F100F05D73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBF8526E1A8FE4F100F05D73 /* Balloon_GameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EBF852691A8FE4F100F05D73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBF8524D1A8FE4F000F05D73 /* Balloon Game */;
+			targetProxy = EBF852681A8FE4F100F05D73 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EBF8525B1A8FE4F000F05D73 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBF8525C1A8FE4F000F05D73 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EBF852601A8FE4F100F05D73 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBF852611A8FE4F100F05D73 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EBF8526F1A8FE4F100F05D73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EBF852701A8FE4F100F05D73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EBF852721A8FE4F100F05D73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/Balloon GameTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		EBF852731A8FE4F100F05D73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/Balloon GameTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		EBF852751A8FE4F100F05D73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Balloon GameTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Balloon Game.app/Balloon Game";
+			};
+			name = Debug;
+		};
+		EBF852761A8FE4F100F05D73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Balloon GameTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Balloon Game.app/Balloon Game";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EBF852491A8FE4F000F05D73 /* Build configuration list for PBXProject "Balloon Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBF8526F1A8FE4F100F05D73 /* Debug */,
+				EBF852701A8FE4F100F05D73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBF852711A8FE4F100F05D73 /* Build configuration list for PBXNativeTarget "Balloon Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBF852721A8FE4F100F05D73 /* Debug */,
+				EBF852731A8FE4F100F05D73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBF852741A8FE4F100F05D73 /* Build configuration list for PBXNativeTarget "Balloon GameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBF852751A8FE4F100F05D73 /* Debug */,
+				EBF852761A8FE4F100F05D73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EBF852461A8FE4F000F05D73 /* Project object */;
+}

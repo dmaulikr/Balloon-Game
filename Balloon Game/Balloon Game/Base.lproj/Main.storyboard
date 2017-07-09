@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Irh-n7-0vj">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Menu View Controller-->
+        <scene sceneID="0Wk-k9-pWF">
+            <objects>
+                <viewController id="Irh-n7-0vj" customClass="MainMenuViewController" customModule="Balloon_Game" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kR7-ZV-FBy"/>
+                        <viewControllerLayoutGuide type="bottom" id="PY7-bk-yA1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KAi-yF-TYM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YHL-fO-CzI">
+                                <rect key="frame" x="227" y="235" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="LVB-YS-i5n" kind="show" identifier="firstRound" id="n1X-Xa-qsT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="YHL-fO-CzI" secondAttribute="trailing" constant="374" id="CT9-K0-gRj"/>
+                            <constraint firstItem="YHL-fO-CzI" firstAttribute="top" secondItem="kR7-ZV-FBy" secondAttribute="bottom" constant="181" id="MqP-hP-FKu"/>
+                            <constraint firstItem="YHL-fO-CzI" firstAttribute="leading" secondItem="KAi-yF-TYM" secondAttribute="leadingMargin" id="nKu-tA-Huk"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="CT9-K0-gRj"/>
+                                <exclude reference="MqP-hP-FKu"/>
+                                <exclude reference="nKu-tA-Huk"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="CT9-K0-gRj"/>
+                                <include reference="MqP-hP-FKu"/>
+                                <include reference="nKu-tA-Huk"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Sd-Wq-GyO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-130" y="12"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="CtS-rA-C9T">
+            <objects>
+                <viewController id="LVB-YS-i5n" customClass="GameViewController" customModule="Balloon_Game" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PCf-gQ-wO7"/>
+                        <viewControllerLayoutGuide type="bottom" id="b3d-qh-BLL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bdc-N1-crn" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="R1W-iV-dSr" kind="show" identifier="goToMail" id="JTA-qT-OJJ"/>
+                        <segue destination="41a-au-Ajj" kind="unwind" identifier="backToMenu" unwindAction="prepareForUnwind:" id="umT-lR-ANm"/>
+                        <segue destination="R1W-iV-dSr" kind="presentation" identifier="backToMail" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="Nlc-ra-exN"/>
+                        <segue destination="Irh-n7-0vj" kind="show" identifier="backToMainMenu" id="p0x-n5-v9H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="btX-cZ-eVz" sceneMemberID="firstResponder"/>
+                <exit id="41a-au-Ajj" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="778" y="-6"/>
+        </scene>
+        <!--Mailbox View Controller-->
+        <scene sceneID="yXp-8L-bnu">
+            <objects>
+                <viewController storyboardIdentifier="MailboxViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="R1W-iV-dSr" customClass="MailboxViewController" customModule="Balloon_Game" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="b42-Io-RQK"/>
+                        <viewControllerLayoutGuide type="bottom" id="w9l-FS-bpf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="20b-2q-Xke">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WDn-Re-WiP">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="508" id="uxs-LO-8s4"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="uxs-LO-8s4"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="uxs-LO-8s4"/>
+                                    </mask>
+                                </variation>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ja-46-gsS">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Travel">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="LVB-YS-i5n" kind="presentation" identifier="chooseCountry" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="tP2-a8-X2n"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="4ja-46-gsS" secondAttribute="trailing" constant="20" id="A2V-X7-ZL8"/>
+                            <constraint firstItem="w9l-FS-bpf" firstAttribute="top" secondItem="WDn-Re-WiP" secondAttribute="bottom" id="B6B-qv-dHi"/>
+                            <constraint firstItem="WDn-Re-WiP" firstAttribute="leading" secondItem="20b-2q-Xke" secondAttribute="centerXWithinMargins" id="MK2-lY-B5q">
+                                <variation key="heightClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstAttribute="trailingMargin" secondItem="WDn-Re-WiP" secondAttribute="trailing" id="aNm-Yw-kxB">
+                                <variation key="heightClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="4ja-46-gsS" firstAttribute="top" secondItem="b42-Io-RQK" secondAttribute="bottom" constant="20" id="cPV-G8-2Bs"/>
+                            <constraint firstItem="WDn-Re-WiP" firstAttribute="top" secondItem="4ja-46-gsS" secondAttribute="bottom" constant="45" id="vph-n8-Mzf"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="WDn-Re-WiP"/>
+                                <exclude reference="4ja-46-gsS"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="B6B-qv-dHi"/>
+                                <exclude reference="A2V-X7-ZL8"/>
+                                <exclude reference="cPV-G8-2Bs"/>
+                                <exclude reference="MK2-lY-B5q"/>
+                                <exclude reference="aNm-Yw-kxB"/>
+                                <exclude reference="vph-n8-Mzf"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="subviews">
+                                <include reference="WDn-Re-WiP"/>
+                                <include reference="4ja-46-gsS"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="B6B-qv-dHi"/>
+                                <include reference="A2V-X7-ZL8"/>
+                                <include reference="cPV-G8-2Bs"/>
+                                <include reference="MK2-lY-B5q"/>
+                                <include reference="aNm-Yw-kxB"/>
+                                <include reference="vph-n8-Mzf"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="WDn-Re-WiP" id="ARX-S3-XI7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IOl-DO-EmG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="676" y="1129.5"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="tP2-a8-X2n"/>
+        <segue reference="JTA-qT-OJJ"/>
+    </inferredMetricsTieBreakers>
+</document>
